@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
 
-const dbConnect = async()=>{
-  try{
-    const isConnected =  await mongoose.connect('mongodb://127.0.0.1:27017/divya');
-    if(isConnected) console.log("connected to mongodb")
-  }catch(err){
-  console.log(err)
+const dbConnect = async () => {
+  try {
+    await mongoose.connect('mongodb://127.0.0.1:27017/esewa', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to MongoDB");
+  } catch (err) {
+    console.error("Database connection error:", err);
   }
-}
-dbConnect()
+};
 
-module.exports = dbConnect
+module.exports = dbConnect;
