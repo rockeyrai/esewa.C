@@ -1,10 +1,11 @@
-import Navbar from '@/components/navbar/page'
+
+
 import React from 'react'
 
 const Main = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className='bg-red-400 h-[200vh]'>
+
       main page
     </div>
   )

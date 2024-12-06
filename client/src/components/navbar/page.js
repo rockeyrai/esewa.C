@@ -21,33 +21,49 @@ const Navbar = () => {
             <div className=" nav-right w-[100%]">
               <div className="relative">
                 <input placeholder="eSewa ID" />
-                <FaUser color="#5fb946" size={13} className="absolute top-[10px] left-[8px] "/>
+                <FaUser
+                  color="#5fb946"
+                  size={13}
+                  className="absolute top-[10px] left-[8px] "
+                />
               </div>
               <div className="relative">
                 <input placeholder="Password" />
-                <FaLock color="#5fb946" size={13} className="absolute top-[10px] left-[8px] "/>
-                <a className="text-[11px] left-0 top-9 absolute text-white">Forgot Password?</a>
+                <FaLock
+                  color="#5fb946"
+                  size={13}
+                  className="absolute top-[10px] left-[8px] "
+                />
+                <a className="text-[11px] left-0 top-9 absolute text-white">
+                  Forgot Password?
+                </a>
               </div>
-              <button className="bg-[#488d35] text-[#c7c0c0] text-[12px] rounded-sm" >Login</button>
-              <button className="bg-[#1d242e] text-[#5fb946] text-[12px] rounded-sm border-[#5fb946] border-2">Register</button>
+              <button className="bg-[#488d35] text-[#c7c0c0] text-[12px] rounded-sm">
+                Login
+              </button>
+              <button className="bg-[#1d242e] text-[#5fb946] text-[12px] rounded-sm border-[#5fb946] border-2">
+                Register
+              </button>
             </div>
           </div>
 
           <button id="login-btn">Login</button>
         </div>
-        <div className="second-top-nav laptop relative">
+      </div>
+      <div className="mobile-nav">
+        <div className=" px-5 h-[45px] laptop">
           <input
             placeholder="Search services/merchant by tags (e.g.adsl)"
-            className="nav-search"
+            className="nav-search rounded-md h-[35px] "
           />
-          <img src="/search.png" className=" absolute left-[5px] top-[6px]" />
+          <img src="/search.png" className=" absolute left-[28px] top-[10px] w-4 h-4" />
         </div>
-      </div>
-      <div className="h-12 bottom-nav">
-        <a>Top Up</a>
-        <a>Airlines</a>
-        <a>Internet Bill</a>
-        <a>Load Fund</a>
+        <div className="h-12 bottom-nav">
+          <a>Top Up</a>
+          <a>Airlines</a>
+          <a>Internet Bill</a>
+          <a>Load Fund</a>
+        </div>
       </div>
     </nav>
   );

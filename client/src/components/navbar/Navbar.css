@@ -12,6 +12,11 @@
 /* ========== .first-nav ========== */
 .first-nav {
   padding: 0 20px;
+  position: fixed; /* Always stays at the top */
+  top: 0;          /* Top of the viewport */
+  z-index: 1000;   /* Ensures it stays above other elements */
+  width: 100%;     /* Full width */
+  background-color: #1d242e
 }
 
 /* .first-nav does not require media query styles */
@@ -106,6 +111,12 @@
   }
 }
 
+.mobile-nav{
+  position: relative; /* Default position, scrolls normally */
+  margin-top: 50px;
+  background-color: #1d242e;
+}
+
 /* ========== .bottom-nav ========== */
 .bottom-nav {
   background-color: #61ba46;
@@ -114,6 +125,8 @@
   justify-content: center;
   font-size: 12px;
   height: 38px;
+  position: static;
+
 }
 
 @media (min-width: 770px) {
@@ -123,6 +136,7 @@
     justify-content: start;
     padding: 0 85px;
     gap: 15px; /* Adjusted font size on larger screens */
+    margin-top: 70px;
   }
 }
 
