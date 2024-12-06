@@ -1,0 +1,214 @@
+/* ========== .mobile ========== */
+.mobile {
+  display: none; /* Hidden by default */
+}
+
+@media (min-width: 770px) {
+  .mobile {
+    display: flex; /* Visible on larger screens */
+  }
+}
+
+/* ========== .first-nav ========== */
+.first-nav {
+  padding: 0 20px;
+}
+
+/* .first-nav does not require media query styles */
+
+/* ========== .top-nav ========== */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+@media (min-width: 770px) {
+  .top-nav {
+    width: 100%; /* Full width on larger screens */
+    height: 70px; /* Taller height */
+    padding: 0 80px; /* Additional padding */
+  }
+}
+
+/* ========== .top-nav img ========== */
+.top-nav img {
+  width: 100px;
+  height: 26px;
+}
+
+@media (min-width: 770px) {
+  .top-nav img {
+  width: 140px;
+  height: 35px;
+  margin-right: 65px;
+  }
+}
+
+/* ========== .top-nav button ========== */
+.top-nav >button:nth-child(3) {
+  border: 1px solid #666667;
+  border-radius: 5px;
+  color: #cdcccd;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* .top-nav button does not require media query styles */
+
+/* ========== .second-top-nav ========== */
+.second-top-nav {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width: 770px){
+  .second-top-nav{
+    margin: 0 10px;
+  }
+}
+
+/* .second-top-nav input ========== */
+.second-top-nav input {
+  font-size: 14px;
+}
+
+/* .second-top-nav img ========== */
+.second-top-nav img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+}
+
+/* ========== .nav-search ========== */
+.nav-search {
+  width: 100%;
+  background-color: #28323c;
+  color: #646a6f;
+  height: 70%;
+  border-radius: 5px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+@media(min-width: 770px){
+  .nav-search {
+    width: 100%;
+    background-color: #28323c;
+    color: #646a6f;
+    height: 70%;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
+/* ========== .bottom-nav ========== */
+.bottom-nav {
+  background-color: #61ba46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 38px;
+}
+
+@media (min-width: 770px) {
+  .bottom-nav {
+    font-size: 14px;
+    height: 38px;
+    justify-content: start;
+    padding: 0 85px;
+    gap: 15px; /* Adjusted font size on larger screens */
+  }
+}
+
+/* ========== .bottom-nav a ========== */
+.bottom-nav a {
+  margin: 4px 0;
+  padding: 4px 10px;
+  color: #ffffff;
+}
+
+/* .bottom-nav a does not require media query styles */
+
+/* ========== #login-btn ========== */
+#login-btn {
+  display: block;
+}
+
+@media (min-width: 770px) {
+  #login-btn {
+    display: none; /* Hidden on larger screens */
+  }
+}
+
+/* ========== .laptop ========== */
+.laptop {
+  display: block; /* Default display */
+}
+
+@media (min-width: 770px) {
+  .laptop {
+    display: none; /* Hidden on larger screens */
+  }
+}
+
+/* ========== .nav-right ========== */
+.nav-right {
+  display: none; /* Default hidden */
+}
+
+@media (min-width: 770px) {
+  .nav-right {
+    display: flex;
+    padding-left: 20px;
+    gap: 5px;
+    height: 100%;
+  
+  }
+}
+
+.nav-right div {
+  width: auto; /* Default width */
+}
+
+@media (min-width: 770px) {
+  .nav-right div {
+    width: 32%;
+    height: 100%;
+
+  }
+  .nav-right input {
+    width: 100%;
+    background-color: #28323c;
+    color: #ffffff;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 14px;
+    height: 100%;
+    padding-right: 20px;
+    border-radius: 2px;
+    transition: background-color 1s ease; /* Smooth transition for background color */
+  }
+  .nav-right input::placeholder {
+    color: #888888; /* Change to desired color */
+  }
+  
+  .nav-right input:focus {
+    background-color: #f9f9f9;
+    outline: none;
+    color: black;
+  }
+  
+
+  .nav-right button{
+    width: 80px;
+    height: 34px ;
+  }
+  
+  
+}
