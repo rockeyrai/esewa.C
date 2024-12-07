@@ -1,0 +1,86 @@
+.hero{
+  padding: 20px;
+}
+
+@media (min-width: 770px) {
+  .hero{
+    padding: 20px 90px;
+  }
+}
+
+.hero-menu{
+  display: none;
+}
+
+@media(min-width: 770px){
+  .hero-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .hero-menu div{
+   font-size: 12.5px;
+   padding: 12px 40px 12px 15px;
+  }
+  .hero-menu div:hover{
+    background-color: rgb(235, 230, 230);
+    color: #61ba46;
+  }
+
+  .hero-menu div .hero-menu-arrow {
+    position: absolute;
+    right: 10px; /* Initial position */
+    top: 15px;
+    height: 10px;
+    width: 10px;
+    transition: left 1s ease; /* Smooth transition for the 'left' property */
+  }
+  
+  .hero-menu div:hover .hero-menu-arrow {
+    right: 20px;
+    transform: translateX(10px);
+    transition: transform 0.5s ease;
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ececec; /* Default background color */
+    border: 1px solid #4dcc26; /* Green border */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .left-arrow {
+    left: 15px; /* Position on the left */
+  }
+  
+  .right-arrow {
+    right:15px; /* Position on the right */
+  }
+  
+  .scroll-icon {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem;
+    stroke: #61ba46; /* Default stroke color */
+    transition: stroke 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .scroll-button:hover {
+    background-color: #61ba46; /* Change background to green on hover */
+  }
+  
+  .scroll-button:hover .scroll-icon {
+    stroke: white; /* Change icon color to white on hover */
+  }
+  
+
+
+}

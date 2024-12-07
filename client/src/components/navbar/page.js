@@ -58,7 +58,7 @@ const Navbar = () => {
           />
           <img src="/search.png" className=" absolute left-[28px] top-[10px] w-4 h-4" />
         </div>
-        <div className="h-12 bottom-nav">
+        <div className=" bottom-nav">
           <a>Top Up</a>
           <a>Airlines</a>
           <a>Internet Bill</a>

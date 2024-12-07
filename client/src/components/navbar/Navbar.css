@@ -132,7 +132,7 @@
 @media (min-width: 770px) {
   .bottom-nav {
     font-size: 14px;
-    height: 38px;
+    height: 35px;
     justify-content: start;
     padding: 0 85px;
     gap: 15px; /* Adjusted font size on larger screens */
