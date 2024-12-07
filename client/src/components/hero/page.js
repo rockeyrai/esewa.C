@@ -5,15 +5,14 @@ import { SlArrowRight } from "react-icons/sl";
 import { LuAlignJustify } from "react-icons/lu";
 
 const Hero = () => {
-  const [showLeftArrow, setShowLeftArrow] = useState(true);
-  const [showRightArrow, setShowRightArrow] = useState(true);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle the dropdown visibility
   const toggleDropdown = () => {
     setIsOpen((prevState) => !prevState);
   };
-
   // Close dropdown if user clicks outside
   const closeDropdown = (event) => {
     if (event.target.closest(".dropdown") === null) {
@@ -23,7 +22,6 @@ const Hero = () => {
 
   React.useEffect(() => {
     window.addEventListener("click", closeDropdown);
-
     return () => {
       window.removeEventListener("click", closeDropdown);
     };
@@ -42,38 +40,38 @@ const Hero = () => {
         </div>
         {isOpen && (
           <div className="dropdown-content flex flex-col">
-              <div className="relative mt-1">
-                Topup & Recharge
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                Elecricity & Water
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                TV Payment
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                Bus Ticket/Tours and Traavels
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                Education Payment
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                DOFE/Insurance Payment
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative">
-                Financial Services
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
-              <div className="relative mb-1">
-                Movies & Entertainment
-                <SlArrowRight className="pc-hero-menu-arrow" />
-              </div>
+            <div className="relative mt-1">
+              Topup & Recharge
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              Elecricity & Water
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              TV Payment
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              Bus Ticket/Tours and Traavels
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              Education Payment
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              DOFE/Insurance Payment
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative">
+              Financial Services
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
+            <div className="relative mb-1">
+              Movies & Entertainment
+              <SlArrowRight className="pc-hero-menu-arrow" />
+            </div>
           </div>
         )}
       </div>
@@ -127,7 +125,6 @@ const Hero = () => {
             <button
               aria-label="Scroll Left"
               className="scroll-button left-arrow"
-              onClick={() => scroll("left")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +142,6 @@ const Hero = () => {
               </svg>
             </button>
           )}
-
           <img
             src="/hero_img.webp"
             className="rounded-md w-[100%] h-[350px]"
@@ -154,8 +150,7 @@ const Hero = () => {
           {showRightArrow && (
             <button
               aria-label="Scroll Right"
-              className="scroll-button right-arrow" /* Include the right-arrow class */
-              onClick={() => scroll("right")}
+              className="scroll-button right-arrow" 
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
