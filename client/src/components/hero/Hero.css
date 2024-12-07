@@ -12,6 +12,43 @@
   display: none;
 }
 
+
+.scroll-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ececec; /* Default background color */
+  border: 1px solid #4dcc26; /* Green border */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.left-arrow {
+  left: 15px; /* Position on the left */
+}
+
+.right-arrow {
+  right:15px; /* Position on the right */
+}
+
+.scroll-icon {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem;
+  stroke: #61ba46; /* Default stroke color */
+  transition: stroke 0.3s ease; /* Smooth hover effect */
+}
+
+.scroll-button:hover {
+  background-color: #61ba46; /* Change background to green on hover */
+}
+
+.scroll-button:hover .scroll-icon {
+  stroke: white; /* Change icon color to white on hover */
+}
+
 @media(min-width: 770px){
   .hero-mobile{
     display: none;

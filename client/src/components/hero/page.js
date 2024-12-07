@@ -144,7 +144,7 @@ const Hero = () => {
           )}
           <img
             src="/hero_img.webp"
-            className="rounded-md w-[100%] h-[350px]"
+            className="rounded-md w-[100%] h-[300px] md:h-[350px]"
             alt="Hero"
           />
           {showRightArrow && (
