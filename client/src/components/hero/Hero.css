@@ -21,9 +21,9 @@
   padding: 0.5rem;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #ececec; /* Default background color */
-  border: 1px solid #4dcc26; /* Green border */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  background-color: #ececec; 
+  border: 1px solid #4dcc26;
+  transition: background-color 0.3s ease; 
 }
 
 .left-arrow {
