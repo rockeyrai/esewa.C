@@ -124,7 +124,7 @@ const Hero = () => {
           {showLeftArrow && (
             <button
               aria-label="Scroll Left"
-              className="scroll-button left-arrow"
+              className="scroll-button bg-[#ececec] border border-[#4dcc26] left-arrow"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ const Hero = () => {
           {showRightArrow && (
             <button
               aria-label="Scroll Right"
-              className="scroll-button right-arrow" 
+              className="scroll-button bg-[#ececec] border border-[#4dcc26] right-arrow" 
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

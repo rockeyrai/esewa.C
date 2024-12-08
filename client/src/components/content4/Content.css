@@ -1,0 +1,130 @@
+@media (min-width: 770px) {
+  .main-contents {
+    height: auto;
+    width: 100%;
+    padding: 10px 90px;
+    padding-right: 115px;
+    margin-bottom: 15px;
+
+  }
+}
+
+.item-container {
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.item-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* For Firefox */
+.item-container {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+@media (min-width: 770px) {
+  .item-container {
+    height: 100%;
+    width: 100%;
+
+    padding: 17px;
+  }
+}
+
+@media (min-width: 770px) {
+  .content-image-div {
+    height: 200px;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 770px) {
+  .sub-content-image-div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 770px) {
+  .sub-content-view-div {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.button-gray {
+  background-color: rgb(213, 253, 209);
+  color: #61ba46;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-gray:hover {
+  background-color: #61ba46;
+  color: white;
+}
+
+.button-white {
+  background-color: white;
+  color: #61ba46;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-white:hover {
+  background-color: #61ba46;
+  color: white;
+}
+
+.sub-content-view-div h1 {
+  margin: 8px 15px;
+}
+
+@media (min-width: 770px) {
+  .sub-content-view-div h1 {
+    margin: 15px 15px;
+  }
+}
+@media (min-width: 770px) {
+  .contents-img {
+    border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 67px;
+    position: relative;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .contents-img img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s linear;
+  }
+
+  .content-image-div:hover .contents-img {
+    border-radius: 4px;
+  }
+
+  .content-image-div:hover .contents-img img {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,27 +1,40 @@
 @media (min-width: 770px) {
   .main-contents {
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 10px 90px;
     padding-right: 115px;
+    margin-bottom: 15px;
   }
 }
 
+.item-container {
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.item-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* For Firefox */
+.item-container {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
 @media (min-width: 770px) {
   .item-container {
-    height: 250px;
+    height: 100%;
     width: 100%;
-    display: grid;
-grid-auto-flow: column;
-gap: 20px;
-padding: 15px;
+
+    padding: 17px;
   }
 }
 
 @media (min-width: 770px) {
   .content-image-div {
     height: 200px;
-    width: 200px;
+    width: 205px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +45,7 @@ padding: 15px;
 @media (min-width: 770px) {
   .sub-content-image-div {
     width: 100%;
-    height: 45%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,15 +54,14 @@ padding: 15px;
 
 @media (min-width: 770px) {
   .sub-content-view-div {
-    height: 55%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
-.button-gray{
+.button-gray {
   background-color: rgb(213, 253, 209);
   color: #61ba46;
   font-size: 12px;
@@ -58,12 +70,12 @@ padding: 15px;
   transition: background-color 0.3s ease;
 }
 
-.button-gray:hover{
+.button-gray:hover {
   background-color: #61ba46;
   color: white;
 }
 
-.button-white{
+.button-white {
   background-color: white;
   color: #61ba46;
   font-size: 12px;
@@ -72,18 +84,17 @@ padding: 15px;
   transition: background-color 0.3s ease;
 }
 
-.button-white:hover{
+.button-white:hover {
   background-color: #61ba46;
   color: white;
 }
 
-.sub-content-view-div h1{
+.sub-content-view-div h1 {
   margin: 8px 15px;
 }
 
-
 @media (min-width: 770px) {
-  .sub-content-view-div h1{
+  .sub-content-view-div h1 {
     margin: 15px 15px;
   }
 }
@@ -93,27 +104,25 @@ padding: 15px;
     overflow: hidden;
     background: #ffffff;
     display: flex;
-align-items: center;
+    align-items: center;
     justify-content: center;
     width: 80px;
     height: 67px;
     position: relative;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    
   }
-  .contents-img img{
+  .contents-img img {
     width: 50px;
     height: 50px;
     transition: all 0.2s linear;
   }
 
-  .content-image-div:hover .contents-img{
-    border-radius:4px ;
-    
+  .content-image-div:hover .contents-img {
+    border-radius: 4px;
   }
 
-  .content-image-div:hover .contents-img img{
+  .content-image-div:hover .contents-img img {
     width: 70px;
     height: 70px;
   }
