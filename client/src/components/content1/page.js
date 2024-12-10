@@ -9,13 +9,13 @@ const PopularService = () => {
   const itemRef = useRef(null); // Reference to a single item for width calculation
 
   const data = [
-    { image: "LrYGf4mSK02MvbHuAeGllogoiphone.webp", name: "Re 1 Game" },
-    { image: "ZUdBFvIDuXH6KqNPU5ecQR Code Only.webp", name: "Business QR Request" },
-    { image: "oOMc2FtQwkghzqchwYWFNepalstock.webp", name: "Trade Management" },
-    { image: "N567WpEwsSmrqniGr3IAbrtcon.webp", name: "British Council-IELTS" },
-    { image: "/6JHSt1Zfo4fRATxXOeFMDOLRKeqrdfQAyUoMdyZn272.webp", name: "IDP-IELTS" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines Domestic" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines International" },
+    { image: "popular1.webp", name: "Re 1 Game" },
+    { image: "popular2.webp", name: "Business QR Request" },
+    { image: "popular3.webp", name: "Trade Management" },
+    { image: "popular4.webp", name: "British Council-IELTS" },
+    { image: "popular5.webp", name: "IDP-IELTS" },
+    { image: "popular6.webp", name: "Nepal Airlines Domestic" },
+    { image: "popular7.webp", name: "Nepal Airlines International" },
   ];
 
   const scroll = (direction) => {

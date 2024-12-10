@@ -9,13 +9,13 @@ const AntiVirus = () => {
   const itemRef = useRef(null); // Reference to a single item for width calculation
 
   const data = [
-    { image: "LrYGf4mSK02MvbHuAeGllogoiphone.webp", name: "Re 1 Game" },
-    { image: "ZUdBFvIDuXH6KqNPU5ecQR Code Only.webp", name: "Business QR Request" },
-    { image: "oOMc2FtQwkghzqchwYWFNepalstock.webp", name: "Trade Management" },
-    { image: "N567WpEwsSmrqniGr3IAbrtcon.webp", name: "British Council-IELTS" },
-    { image: "/6JHSt1Zfo4fRATxXOeFMDOLRKeqrdfQAyUoMdyZn272.webp", name: "IDP-IELTS" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines Domestic" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines International" },
+    { image: "antivirus1.webp", name: "Kaspersky" },
+    { image: "antivirus2.webp", name: "K7 Antivirus" },
+    { image: "antivirus3.webp", name: "BitdeFender" },
+    { image: "antivirus4.webp", name: "MSecurity" },
+    { image: "antivirus5.webp", name: "Dr.Web Antivirus" },
+    { image: "antivirus6.webp", name: "Nepal Airlines Domestic" },
+    { image: "antivirus7.webp", name: "Nepal Airlines International" },
   ];
 
   const scroll = (direction) => {

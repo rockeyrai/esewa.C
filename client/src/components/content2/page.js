@@ -9,13 +9,11 @@ const NewService = () => {
   const itemRef = useRef(null); // Reference to a single item for width calculation
 
   const data = [
-    { image: "LrYGf4mSK02MvbHuAeGllogoiphone.webp", name: "Re 1 Game" },
-    { image: "ZUdBFvIDuXH6KqNPU5ecQR Code Only.webp", name: "Business QR Request" },
-    { image: "oOMc2FtQwkghzqchwYWFNepalstock.webp", name: "Trade Management" },
-    { image: "N567WpEwsSmrqniGr3IAbrtcon.webp", name: "British Council-IELTS" },
-    { image: "/6JHSt1Zfo4fRATxXOeFMDOLRKeqrdfQAyUoMdyZn272.webp", name: "IDP-IELTS" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines Domestic" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines International" },
+    { image: "new1.webp", name: "sukraraj Iropical & infectious Desease" },
+    { image: " new2.webp", name: "eSewa Bluebook Renewal Service" },
+    { image: "new3.webp", name: "eSpeaker Request" },
+    { image: "new4.webp", name: "Alfa Health Care $ Diagnostic Center" },
+    { image: "new5.webp", name: "Naasa Securities Company Limited" },
   ];
 
   const scroll = (direction) => {
@@ -86,7 +84,7 @@ const NewService = () => {
             >
               <div className="sub-content-image-div bg-[#f5f7fd]">
                 <div className="contents-img">
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} className="" />
                 </div>
               </div>
               <div className="sub-content-view-div">

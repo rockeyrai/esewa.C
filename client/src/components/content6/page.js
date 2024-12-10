@@ -9,13 +9,12 @@ const Ecommerce = () => {
   const itemRef = useRef(null); // Reference to a single item for width calculation
 
   const data = [
-    { image: "LrYGf4mSK02MvbHuAeGllogoiphone.webp", name: "Re 1 Game" },
-    { image: "ZUdBFvIDuXH6KqNPU5ecQR Code Only.webp", name: "Business QR Request" },
-    { image: "oOMc2FtQwkghzqchwYWFNepalstock.webp", name: "Trade Management" },
-    { image: "N567WpEwsSmrqniGr3IAbrtcon.webp", name: "British Council-IELTS" },
-    { image: "/6JHSt1Zfo4fRATxXOeFMDOLRKeqrdfQAyUoMdyZn272.webp", name: "IDP-IELTS" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines Domestic" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines International" },
+    { image: "ecommerce1.webp", name: "Bhoje Deal" },
+    { image: "ecommerce2.webp", name: "Foodmandu" },
+    { image: "ecommerce3.webp", name: "Ultima Lifestyle" },
+    { image: "ecommerce4.webp", name: "Jeevee" },
+    { image: "ecommerce5.webp", name: "AGM Web Hosting" },
+
   ];
 
   const scroll = (direction) => {

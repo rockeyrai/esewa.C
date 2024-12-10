@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         )}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 ">
         <div className="hero-menu">
           <div className="relative">
             Topup & Recharge
@@ -111,7 +111,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="relative "
+          className="relative  "
           onMouseEnter={() => {
             setShowLeftArrow(true);
             setShowRightArrow(true);
@@ -144,7 +144,7 @@ const Hero = () => {
           )}
           <img
             src="/hero_img.webp"
-            className="rounded-md w-[100%] h-[300px] md:h-[350px]"
+            className="rounded-md w-[100%] h-[100%]"
             alt="Hero"
           />
           {showRightArrow && (

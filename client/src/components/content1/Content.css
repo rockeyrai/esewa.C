@@ -106,16 +106,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 80%; /* Adjust width to your requirement */
     height: 67px;
+    aspect-ratio: 1/1;
     position: relative;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
   .contents-img img {
-    width: 50px;
-    height: 50px;
-    transition: all 0.2s linear;
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Keeps the entire image visible */
+    object-position: center; /* Centers the image */
+    transition: transform 0.3s ease-in-out;
   }
 
   .content-image-div:hover .contents-img {
@@ -123,7 +126,7 @@
   }
 
   .content-image-div:hover .contents-img img {
-    width: 70px;
-    height: 70px;
+    transform: scale(1.1);
+    padding: 6px;
   }
 }

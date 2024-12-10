@@ -9,13 +9,11 @@ const VotingEvents = () => {
   const itemRef = useRef(null); // Reference to a single item for width calculation
 
   const data = [
-    { image: "LrYGf4mSK02MvbHuAeGllogoiphone.webp", name: "Re 1 Game" },
-    { image: "ZUdBFvIDuXH6KqNPU5ecQR Code Only.webp", name: "Business QR Request" },
-    { image: "oOMc2FtQwkghzqchwYWFNepalstock.webp", name: "Trade Management" },
-    { image: "N567WpEwsSmrqniGr3IAbrtcon.webp", name: "British Council-IELTS" },
-    { image: "/6JHSt1Zfo4fRATxXOeFMDOLRKeqrdfQAyUoMdyZn272.webp", name: "IDP-IELTS" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines Domestic" },
-    { image: "ZVFXuPN7LGdVTpKGVzvtNepairlogoo.webp", name: "Nepal Airlines International" },
+    { image: "insurance1.jpg", name: "Sonu NIgam:live" },
+    { image: "insurance2.webp", name: "Gautam Buddha" },
+    { image: "insurance3.webp", name: "Miss Artistry 2024" },
+    { image: "insurance4.webp", name: "Voice of Chitwan" },
+    { image: "insurance5.png", name: "Third Star Music & dance" },
   ];
 
   const scroll = (direction) => {
