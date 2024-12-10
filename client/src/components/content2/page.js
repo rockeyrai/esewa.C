@@ -74,7 +74,7 @@ const NewService = () => {
 
         <div
           ref={sliderRef} // Add the ref to the scroll container
-          className="item-container flex overflow-x-auto gap-5 snap-x snap-mandatory scroll-containe bg-[#fffefe] rounded"
+          className="item-container flex overflow-x-auto    gap-2 md:gap-5 snap-x snap-mandatory scroll-containe bg-[#fffefe] rounded"
         >
           {data.map((item, index) => (
             <div
@@ -87,8 +87,8 @@ const NewService = () => {
                   <img src={item.image} alt={item.name} className="" />
                 </div>
               </div>
-              <div className="sub-content-view-div">
-                <h1 className="text-xs">{item.name}</h1>
+              <div className="sub-content-view-div ">
+                <h1 className="text-xs line-clamp-1	">{item.name}</h1>
                 <button className="mt-4 button-white"> View Details</button>
               </div>
             </div>

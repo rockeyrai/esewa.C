@@ -1,0 +1,51 @@
+/* Container styling */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slider styling */
+.slider {
+  display: flex;
+  gap: 0; /* Remove gaps between cards */
+  animation: slide 15s linear infinite; /* Smooth infinite slide */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent shrinking or growing */
+  width: 300px; /* Fixed card width */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Keyframes for seamless infinite sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 3)); /* Slide total width of all cards */
+}
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Slide half the width for continuous looping */
+  }
+}
+
+.slider {
+  width: 200%; /* Double the width for seamless repeat */
+}

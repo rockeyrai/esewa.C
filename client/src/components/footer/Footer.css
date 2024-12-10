@@ -1,0 +1,11 @@
+.footer{
+display: none;
+}
+
+@media(min-width: 770px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+}

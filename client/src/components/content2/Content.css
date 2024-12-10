@@ -7,6 +7,12 @@
   }
 }
 
+.main-contents{
+  height: auto;
+  width: 100%;
+  padding: 10px 20px;
+}
+
 .item-container {
   overflow-x: scroll; /* Allow horizontal scrolling */
   overflow-y: hidden; /* Disable vertical scrolling */
@@ -25,9 +31,13 @@
   .item-container {
     height: 100%;
     width: 100%;
-
     padding: 17px;
   }
+}
+.item-container {
+  height: 100%;
+  width: 100%;
+  padding: 8px;
 }
 
 @media (min-width: 770px) {
@@ -40,6 +50,12 @@
     align-items: center;
   }
 }
+.content-image-div {
+  height: 100px;
+  width: 115px;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 770px) {
   .sub-content-image-div {
@@ -50,6 +66,15 @@
     align-items: center;
   }
 }
+.sub-content-image-div {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 770px) {
   .sub-content-view-div {
@@ -58,6 +83,10 @@
     flex-direction: column;
     align-items: center;
   }
+}
+.sub-content-view-div {
+  height: 10%;
+  align-items: center;
 }
 
 .button-gray {
@@ -89,7 +118,8 @@
 }
 
 .sub-content-view-div h1 {
-  margin: 8px 15px;
+  margin: 0px 15px;
+
 }
 
 @media (min-width: 770px) {
@@ -97,7 +127,52 @@
     margin: 15px 15px;
   }
 }
+
+.sub-content-view-div h1 {
+  margin: 2px 5px;
+  font-size: 9px;
+  text-align: center;
+}
+
+.sub-content-view-div button{
+  display: none;
+}
+
+.contents-img {
+  border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust width to your requirement */
+  height: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.contents-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Keeps the entire image visible */
+  object-position: center; /* Centers the image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-image-div:hover .contents-img {
+  border-radius: 4px;
+}
+
+.content-image-div:hover .contents-img img {
+  transform: scale(1.1);
+  padding: 3px;
+}
+
 @media (min-width: 770px) {
+  .sub-content-view-div button{
+    display: flex;
+  }
   .contents-img {
     border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
     overflow: hidden;
